@@ -1,0 +1,26 @@
+.calc-button {
+    background-color: #2d2d2d;
+    width: 75px;
+    height: 65px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ebeaea;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0 1px 3px 1px #000;
+    border: none;
+    outline: none;
+}
+
+.number:hover,
+.operator:hover {
+    opacity: .75;
+    transform: scale(1.045);
+}
+
+.operator {
+    background-color: #ec7200;
+}
