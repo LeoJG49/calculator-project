@@ -1,11 +1,11 @@
 import './App.css';
-import Calculator from './components/Calculator';
+import FunctionalCalculator from './components/Calculator';
 
 
 function App() {
   return (
     <div className="App">
-        <Calculator />
+        <FunctionalCalculator />
     </div>
   );
 }
