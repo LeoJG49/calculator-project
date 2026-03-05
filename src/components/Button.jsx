@@ -1,15 +1,16 @@
-import React from 'react'
 import '../stylesheets/buttons.css'
 
-const Button = ({ children, onClick }) => {
+const Button = (props) => {
 
     const isOperator = value => {
         return isNaN(value);
     }
 
     return (
-        <button className={`calc-button ${isOperator(children) ? "operator" : "number"}`} onClick={onClick}>
-            {children}
+        <button className={`calc-button ${isOperator(props.children) ? "operator" : "number"}`.trimEnd()}
+            onClick={() => props.handleClick(props.children)}
+        >
+            {props.children}
         </button>
     )
 }
