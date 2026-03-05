@@ -20,10 +20,11 @@
     align-items: flex-end;
     padding: 10px 10px 0 0;
     pointer-events: none;
+    overflow: hidden;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .row {
